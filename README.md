@@ -208,6 +208,9 @@ Turn 3:
 
 ## 🔗 相关资源
 
+- **[使用案例（Use Cases）](USE_CASES.md)** → 真实场景示例（错误处理、重构、日志系统）
+- **[SKILL.md](SKILL.md)** → 详细 API 文档和安全机制
+- **[README.HERMES.md](README.HERMES.md)** → 如何集成 Hermes execute_code
 - [Claude Code GitHub](https://github.com/anthropics/claude-code)
 - [Hermes Docs](https://docs.hermes-agent.com/)
 - [你的模型配置](~/fredrezones55/qwopus3.5:27b)
