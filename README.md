@@ -1,5 +1,12 @@
 # 🤝 Claude Code - Hermes 和谐架构
 
+[![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Code style: Ruff](https://img.shields.io/badge/code%20style-ruff-00FF00)](https://github.com/astral-sh/ruff)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Hermes Agent](https://img.shields.io/badge/Hermes-qwopus3.5:27b-purple)](https://github.com/fredrezones55)
+
+---
+
 > **理念**：Claude Code 的优雅交互 + Hermes 的智能推理（你的 qwopus 3.5B 模型）
 
 ## 📖 概述
