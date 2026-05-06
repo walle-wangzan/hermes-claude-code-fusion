@@ -6,6 +6,7 @@
 import shutil
 import sys
 import tempfile
+import unittest
 from pathlib import Path
 
 # 添加项目根目录到 Python 路径
@@ -33,8 +34,8 @@ class TestFileStateEntry(unittest.TestCase):
         entry2 = FileStateEntry("test.py", "def hello(): pass", 500)
         entry3 = FileStateEntry("test.py", "def world(): pass", 500)
 
-        self.assertEqual(entry1.etag, entry2.etag)  # 相同内容
-        self.assertNotEqual(entry1.etag, entry3.etag)  # 不同内容
+        self.assertEqual(entry1.etag, entry2.etag)
+        self.assertNotEqual(entry1.etag, entry3.etag)
 
 
 class TestFileStateCache(unittest.TestCase):
@@ -52,7 +53,7 @@ class TestFileStateCache(unittest.TestCase):
         self.cache.save("test.py", "def hello():\n    return 42")
 
         result = self.cache.get_all()["test.py"]
-        self.assertIn("content" or "file_content", result)
+        self.assertIn("file_content", result)
 
     def test_limit_behavior(self):
         """测试缓存有限（默认 500 行）"""
