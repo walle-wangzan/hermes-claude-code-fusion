@@ -60,9 +60,11 @@ select = [
     "I",  # isort
     "B",  # flake8-bugbear
 ]
+# Ignore these specific false positives in our f-string code generation
 ignore = [
-    "E501",  # line too long (handled by line-length)
-    "B008",  # do not perform function calls in argument defaults
+    "E501",  # line too long
+    "F821",  # undefined name in f-strings (false positive)
+    "F823",  # local variable referenced before assignment in f-strings (false positive)
 ]
 
 [tool.pytest.ini_options]
