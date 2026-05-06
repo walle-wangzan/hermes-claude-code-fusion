@@ -3,20 +3,17 @@
 测试核心安全机制和文件操作。
 """
 
-import os
-import shutil
 import sys
-import tempfile
 import time
 import unittest
 from pathlib import Path
+
+from claude_core import EditValidator, FileStateCache, FileStateEntry, FStringMatcher
 
 # 添加项目根目录到 Python 路径
 PROJECT_ROOT = Path(__file__).parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-
-from claude_core import FileStateCache, FileStateEntry, FStringMatcher, EditValidator
 
 
 class TestFileStateEntry(unittest.TestCase):
@@ -54,7 +51,7 @@ class TestFileStateCache(unittest.TestCase):
         """测试缓存的 set 和 get 操作"""
         cache = FileStateCache()
         timestamp = int(time.time() * 1000)
-        
+
         entry = FileStateEntry("test.py", "def hello(): pass", timestamp=timestamp)
         cache.set(entry)
 

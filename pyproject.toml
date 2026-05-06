@@ -25,7 +25,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 dependencies = []  # 纯 Python，无外部依赖！
 
 [project.optional-dependencies]
