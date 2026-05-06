@@ -70,3 +70,4 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_functions = ["test_*"]
 addopts = "-v --tb=short"
+pythonpath = ["."]  # 允许从根目录导入 claude_core.py
